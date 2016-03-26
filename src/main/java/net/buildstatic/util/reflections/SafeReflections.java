@@ -65,6 +65,17 @@ public class SafeReflections {
                 .collect(Collectors.toSet());
     }
 
+    public Set<Method> getMethodsAnnotatedWith(Class<? extends Annotation> annotation) {
+        Set<Method> methods = new HashSet<>();
+        getSubTypesOf(Object.class)
+                .forEach(clazz ->
+                        Arrays.stream(clazz.getMethods())
+                                .filter(m -> m.isAnnotationPresent(annotation) && !m.isAnnotationPresent(ReflectIgnore.class))
+                                .forEach(methods::add)
+                );
+        return methods;
+    }
+
     public Reflections getWrapped() {
         return internal;
     }

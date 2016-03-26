@@ -20,7 +20,7 @@ Simply add SafeReflections as a Maven dependency:
         <dependency>
             <groupId>net.buildstatic.util</groupId>
             <artifactId>SafeReflections</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         ...
