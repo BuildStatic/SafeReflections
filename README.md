@@ -28,7 +28,7 @@ Simply add SafeReflections as a Maven dependency:
 ```
 
 Simply replace all usages of [Reflections](https://reflections.googlecode.com) with [SafeReflections](https://github.com/BuildStatic/SafeReflections/tree/master). 
-Also, you can now annotate classes with `@ReflectIgnore` to have them not be referenced by SafeReflections. We have the most common methods we 
+Also, you can now annotate classes and methods with `@ReflectIgnore` to have them not be referenced by SafeReflections. We have the most common methods we 
 use in SafeReflections, but if you need one we do not provide, simply get the `internal` SafeReflections by calling `getInternal()` which returns a Reflections instance.
 
 ## Contributing
