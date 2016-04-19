@@ -61,7 +61,7 @@ public class SafeReflections {
         return internal.getSubTypesOf(type)
                 .stream()
                 .filter(clazz -> !clazz.isAnnotationPresent(ReflectIgnore.class))
-                .filter(clazz -> Arrays.stream(clazz.getConstructors()).anyMatch(c -> c.getParameterTypes().length == 0 || !noArgs))
+                .filter(clazz -> Arrays.stream(clazz.getDeclaredConstructors()).anyMatch(c -> c.getParameterTypes().length == 0 || !noArgs))
                 .collect(Collectors.toSet());
     }
 
