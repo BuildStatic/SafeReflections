@@ -1,4 +1,4 @@
-package net.buildstatic.util.reflections;
+package net.buildstatic.util.safereflections;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

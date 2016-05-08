@@ -1,4 +1,4 @@
-package net.buildstatic.util.reflections;
+package net.buildstatic.util.safereflections;
 
 import org.reflections.Reflections;
 import org.reflections.scanners.ResourcesScanner;
@@ -11,7 +11,6 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 

@@ -1,5 +1,5 @@
 # SafeReflections
-Wrapper for [Google Reflections](https://reflections.googlecode.com) that aims to fix loading of unessacary classes.
+Wrapper for [Google Reflections](https://reflections.googlecode.com) that aims to fix loading of unnecessary classes.
 
 ## Requirements
 Java 8 and [Google Reflections](https://reflections.googlecode.com)
@@ -19,13 +19,14 @@ Simply add SafeReflections as a Maven dependency:
 <dependencies>
         <dependency>
             <groupId>net.buildstatic.util</groupId>
-            <artifactId>SafeReflections</artifactId>
+            <artifactId>saferelfections</artifactId>
             <version>1.1.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         ...
 </dependencies>
 ```
+alternatively, you can get a jar [here](http://ci.buildstatic.net/job/SafeReflections/).
 
 Simply replace all usages of [Reflections](https://reflections.googlecode.com) with [SafeReflections](https://github.com/BuildStatic/SafeReflections/tree/master). 
 Also, you can now annotate classes and methods with `@ReflectIgnore` to have them not be referenced by SafeReflections. We have the most common methods we 
